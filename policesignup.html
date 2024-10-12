@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Viewport / Language basics -->
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <!-- Set the title of the webpage -->
+    <title>Police Sign up</title>
+    <!-- Link css stylesheet -->
+    <link rel="stylesheet" href="./scss/policesignup.css">
+
+    <!-- Google fonts -->
+    <!-- Preconnect to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts stylesheet for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Navigation bar links to other pages-->
+            <div class="menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="register.html" class="menu-link">Register a bike</a>
+                <a href="/php/stolen.php" class="menu-link">Stolen bikes</a>
+                <a href="../php/mybikes.php" class="menu-link">My bikes</a>
+            </div>
+            <!-- Further links to other pages -->
+            <div class="menu">
+                <a href="signin.html" class="menu-link">Sign in</a>
+                <a href="signup.html" class="menu-btn">Sign up</a>
+                <a href="policedashboard.html" class="menu-btn-police">Police</a>
+            </div>
+            <!-- Mini navigation bar for signing out and accessing profile-->
+            <div class="mini-navbar">
+                <a href="/php/signout.php" class="mini-menu-btn">Sign out</a>
+                <a href="/php/profile.php" class="mini-menu-btn">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Police sign-up form -->
+    <form class="register-form" action="https://s4304413-ctxxxx.uogs.co.uk/php/policesignup.php" method="post">
+        <h1>Create a Police account for yourself or another Officer</h1><br>
+		<!-- Input fields for police registration form, POST to policesignup.php for handling. -->
+        <input type="text" name="firstNamePolice" placeholder="First Name*" required>
+        <input type="text" name="lastNamePolice" placeholder="Last Name*" required>
+        <input type="text" name="warrantNumber" placeholder="Warrant / Collar Number*" required>
+        <input type="text" name="telephone" placeholder="Telephone*" required>
+        <input type="text" name="policeForce" placeholder="Police Force*" required>
+        <input type="text" name="stationAddressOne" placeholder="Station Address*" required>
+        <input type="text" name="stationAddressTwo" placeholder="Station Address 2" optional>
+        <input type="text" name="stationTown" placeholder="Station Town*" required>
+        <input type="text" name="stationCounty" placeholder="Station County*" required>
+        <input type="text" name="stationPostcode" placeholder="Station Postcode*" required>
+        <input type="text" name="emailPolice" placeholder="Email address (.police.uk)*" required>
+        <input type="text" name="passwordPolice" placeholder="Password*" required>
+        <input type="text" name="confirmPasswordPolice" placeholder="Confirm password*" required>
+		<!-- Checkbox for terms and conditions -->
+        <br><div class="tickbox-tc">
+            <input id="checkbox1" type="checkbox" required />
+            <label for="checkbox1"> I agree to the <a href="tandc.html">Terms and Conditions</a>.</label>
+        </div>
+		<!-- Checkbox for privacy policy-->
+        <br><div class="tickbox-pp">
+            <input id="checkbox2" type="checkbox" required />
+            <label for="checkbox2"> I agree to the <a href="privpol.html">Privacy Policy</a>.</label>
+        </div>
+
+        <br><button type="submit">Create account</button>
+        <!-- Link to sign-in page -->
+        <p class="signin-link">Already have an account? <a href="signin.html"><br>Sign in now.</a></p>
+
+    </form>
+
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-center">&copy; 2024 Bike Theft Prevention. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--Jquery scripts-->
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Script to handle police sign up -->
+    <script src="./js/policesignup.js"></script>
+    <!-- Include signout script -->
+    <script src="signout.js"></script>
+</body>
+
+</html>

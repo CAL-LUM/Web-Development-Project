@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Viewport / Language basics -->
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <!-- Set the title of the webpage -->
+    <title>Police Dashboard</title>
+    <!-- Link css stylesheet -->
+    <link rel="stylesheet" href="./scss/policedashboard.css">
+
+    <!-- Google fonts -->
+    <!-- Preconnect to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts stylesheet for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Navigation bar links to other pages-->
+            <div class="menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="register.html" class="menu-link">Register a bike</a>
+                <a href="/php/stolen.php" class="menu-link">Stolen bikes</a>
+                <a href="../php/mybikes.php" class="menu-link">My bikes</a>
+            </div>
+            <!-- Further links to other pages -->
+            <div class="menu">
+                <a href="signin.html" class="menu-link">Sign in</a>
+                <a href="signup.html" class="menu-btn">Sign up</a>
+                <a href="policedashboard.html" class="menu-btn-police">Police</a>
+            </div>
+            <!-- Mini navigation bar for signing out and accessing profile-->
+            <div class="mini-navbar">
+                <a href="/php/signout.php" class="mini-menu-btn">Sign out</a>
+                <a href="/php/profile.php" class="mini-menu-btn">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main container -->
+    <div class="container">
+        <div class="info-container">
+            <!-- Tiles that link to other pages to update account information, view stolen bikes or enroll yourself or another officer -->
+            <div class="tile" onclick="window.location.href='/php/policeprofile.php'">
+                <h2 class="tile-heading">Update Police account details</h2>
+                <br>
+                <p class="tile-comment">Click here to update your police account details, such as telephone number, warrant number, address, and county, as well as your full name, email, and passwords.</p>
+            </div>
+            <div class="tile" onclick="window.location.href='/php/stolenbikes.php'">
+                <h2 class="tile-heading">View reported bikes</h2>
+                <br>
+                <p class="tile-comment">Click here to view reported bikes, limit search by date, as well as make, model, and color.</p>
+            </div>
+            <div class="tile" onclick="window.location.href='policesignup.html'">
+                <h2 class="tile-heading">Enroll a Police Officer</h2>
+                <br>
+                <p class="tile-comment">Click here to enroll another Police Officer by creating an account for them.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-center">&copy; 2024 Bike Theft Prevention. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

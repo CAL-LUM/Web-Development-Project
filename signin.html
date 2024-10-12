@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Viewport / Language basics -->
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <!-- Set the title of the webpage -->
+    <title>Sign in</title>
+    <!-- Link css stylesheet -->
+    <link rel="stylesheet" href="./scss/signin.css">
+
+    <!-- Google fonts -->
+    <!-- Preconnect to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts stylesheet for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Navigation links -->
+            <div class="menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="register.html" class="menu-link">Register a bike</a>
+                <a href="/php/stolen.php" class="menu-link">Stolen bikes</a>
+                <a href="../php/mybikes.php" class="menu-link">My bikes</a>
+            </div>
+            <!-- Additional links -->
+            <div class="menu">
+                <a href="signin.html" class="menu-link">Sign in</a>
+                <a href="signup.html" class="menu-btn">Sign up</a>
+                <a href="policedashboard.html" class="menu-btn-police">Police</a>
+            </div>
+            <!-- Mini navigation bar -->
+            <div class="mini-navbar">
+                <a href="/php/signout.php" class="mini-menu-btn">Sign out</a>
+                <a href="/php/profile.php" class="mini-menu-btn">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign-in form -->
+    <div class="container">
+        <div class="signin-public">
+            <form class="login-form public" action="https://s4304413-ctxxxx.uogs.co.uk/php/signin.php" method="post">
+                <h1>Welcome back!</h1>
+                <h2>Sign in</h2><br><br>
+				<!-- Input fields for signing in to user account, handled by signin.php -->
+                <input type="text" name="email" placeholder="Email address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign in</button>
+				<!-- link to signup page should a user not have an account -->
+                <p class="signup-link"><br>Don't have an account? <a href="signup.html"><br>Create an account now.</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-center">&copy; 2024 Bike Theft Prevention. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--Jquery-->
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+    <!-- Include signout script -->
+    <script src="signout.js"></script>
+
+</body>
+
+</html>

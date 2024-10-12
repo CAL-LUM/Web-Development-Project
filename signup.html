@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Viewport / Language basics -->
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <!-- Set the title of the webpage -->
+    <title>Sign up</title>
+    <!-- Link css stylesheet -->
+    <link rel="stylesheet" href="./scss/signup.css">
+
+    <!-- Google fonts -->
+    <!-- Preconnect to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts stylesheet for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Navigation links -->
+            <div class="menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="register.html" class="menu-link">Register a bike</a>
+                <a href="/php/stolen.php" class="menu-link">Stolen bikes</a>
+                <a href="../php/mybikes.php" class="menu-link">My bikes</a>
+            </div>
+            <!-- Additional links -->
+            <div class="menu">
+                <a href="signin.html" class="menu-link">Sign in</a>
+                <a href="signup.html" class="menu-btn">Sign up</a>
+                <a href="policedashboard.html" class="menu-btn-police">Police</a>
+            </div>
+            <!-- Mini navigation bar -->
+            <div class="mini-navbar">
+                <a href="/php/signout.php" class="mini-menu-btn">Sign out</a>
+                <a href="/php/profile.php" class="mini-menu-btn">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Registration information container -->
+    <div class="container">
+        <div class="info-container">
+            <h1>Registering Information</h1>
+            <img src="./scss/images/warninglabel.jpg">
+			<!-- Info about registering an account. -->
+            <br><p>By creating an account with 'Title of website' you are able to view stolen bikes in your area, reigster multiple bikes for you and your family, and report bikes stolen.</p><br>
+
+
+            <p>To create an account, complete the form on this page with your details.</p><br><br>
+
+            <h4>Registering an account is completely free and provides you with the following benefits:</h4><br><br>
+
+            <ul type="1">
+                <li>A lifetime registration on the 'title of website' database.</li><br>
+                <li>A registration logbook, you can use this as proof of ownership in case of theft, should you chose to register a bike.</li><br>
+                <li>Secure access online to manage your account and registered bikes.</li>
+            </ul><br><br><br>
+
+            <em>Your account details are held within our database, which your local police force has access to in order to view stolen bikes, as well as contact the owners of these bikes.</em><br>
+
+        </div>
+
+        <!-- Sign-up form -->
+        <form class="signup-form" action="https://s4304413-ctxxxx.uogs.co.uk/php/signup.php" method="post">
+            <h1>Create an account</h1><br>
+			<!-- Input fields for sign up form, POST data to signup.php for handling.-->
+            <input type="text" name="firstName" placeholder="First name" required>
+            <input type="text" name="lastName" placeholder="Last name" required>
+            <input type="text" name="emailUser" placeholder="Email address" required>
+            <input type="text" name="passwordUser" placeholder="Password" required>
+            <input type="text" name="confirmPasswordUser" placeholder="Confirm password" required>
+			<!-- Tickbox for Terms and Conditions-->
+            <br><div class="tickbox-tc">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox"> I agree to the <a href="tandc.html">Terms and Conditions</a>.</label>
+            </div>
+			<!-- Tickbox for Privacy Policy-->
+            <br><div class="tickbox-pp">
+                <input id="checkbox" type="checkbox" />
+                <label for="checkbox"> I agree to the <a href="privpol.html">Privacy Policy</a>.</label>
+            </div>
+			<!-- Submit button-->
+            <br><button class="form-submit-button" type="submit">Create account</button>
+			<!-- Link to sign in page-->
+            <p class="signin-link">Already have an account? <a href="signin.html"><br>Sign in now.</a></p>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-center">&copy; 2024 Bike Theft Prevention. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <!--Jquery-->
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!-- Scripts -->
+    <script src="signout.js"></script>
+</body>
+
+</html>

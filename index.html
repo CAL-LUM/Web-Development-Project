@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Viewport / Language basics -->
+    <!-- Set character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Define viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Set compatibility mode for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <!-- Set the title of the webpage -->
+    <title>Home</title>
+    <!-- Link css stylesheet -->
+    <link rel="stylesheet" href="./scss/index.css">
+
+    <!-- Google fonts -->
+    <!-- Preconnect to Google Fonts API -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link to Google Fonts stylesheet for custom fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Main container -->
+    <div class="container">
+        <div class="content">
+            <!-- Heading and description -->
+            <h1>Check your<br>area for theft</h1>
+            <p>Ensuring your local area stays safe and protected against rising bike theft.</p>
+            <!-- Search form -->
+            <form class="search-form">
+                <input type="text" placeholder="Search for your city" class="search-bar">
+                <button type="submit" class="menu-btn">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- Navigation bar container -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Navigation bar links to other pages-->
+            <div class="menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="register.html" class="menu-link">Register a bike</a>
+                <a href="/php/stolen.php" class="menu-link">Stolen bikes</a>
+                <a href="/php/mybikes.php" class="menu-link">My bikes</a>
+            </div>
+            <!-- Further links to other pages -->
+            <div class="menu">
+                <a href="signin.html" class="menu-link">Sign in</a>
+                <a href="signup.html" class="menu-btn">Sign up</a>
+                <a href="policedashboard.html" class="menu-btn-police">Police</a>
+            </div>
+            <!-- Mini navigation bar for signing out and accessing profile-->
+            <div class="mini-navbar">
+                <a href="/php/signout.php" class="mini-menu-btn">Sign out</a>
+                <a href="/php/profile.php" class="mini-menu-btn">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer container -->
+    <div class="footer">
+        <ul class="footer-un-list">
+          <!-- Footer links to T&C and Privacy Policy -->
+          <li class="footer-list"><a href="tandc.html">Terms and Conditions</a></li>
+          <li class="footer-list"><a href="privpol.html">Privacy Policy</a></li>
+          </li>
+        </ul>
+    </div>
+
+    <!--Jquery scripts-->
+    <!-- Include jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Include signout script -->
+    <script src="signout.js"></script>
+
+</body>
+
+</html>

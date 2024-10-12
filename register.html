@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Viewport / Language basics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <title>Register a bike</title>
+    <link rel="stylesheet" href="./scss/register.css">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <!-- Navigation bar links to other pages-->
+            <div class="menu">
+                <a href="index.html" class="menu-link">Home</a>
+                <a href="register.html" class="menu-link">Register a bike</a>
+                <a href="/php/stolen.php" class="menu-link">Stolen bikes</a>
+                <a href="../php/mybikes.php" class="menu-link">My bikes</a>
+            </div>
+            <!-- Further links to other pages -->
+            <div class="menu">
+                <a href="signin.html" class="menu-link">Sign in</a>
+                <a href="signup.html" class="menu-btn">Sign up</a>
+                <a href="policedashboard.html" class="menu-btn-police">Police</a>
+            </div>
+            <!-- Mini navigation bar for signing out and accessing profile-->
+            <div class="mini-navbar">
+                <a href="/php/signout.php" class="mini-menu-btn">Sign out</a>
+                <a href="/php/profile.php" class="mini-menu-btn">Profile</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content container -->
+    <div class="container">
+        <div class="info-container">
+            <h1>Registering Information</h1>
+            <img src="./scss/images/warninglabel.jpg">
+			<!-- Information about registering. -->
+            <p>Registering your bike is a crucial step in ensuring its safety and increasing the chances of recovery in case of theft. By registering your bike, a digital record is created, which can be invaluable in proving ownership, should your bike be stolen or lost.</p><br>
+
+            <p>Register your bikes details in the form on this page.</p><br><br>
+
+            <h4>Registering your bike is completely free and provides you with the following benefits:</h4><br><br>
+
+            <ul type="1">
+                <li>A lifetime registration on the 'title of website' database.</li><br>
+                <li>Your bike will appear in 'my bikes', you can use this to report your bike stolen and as proof of ownership in case of theft.</li><br>
+                <li>Secure access online to manage your account and registered bikes.</li>
+            </ul><br><br><br>
+
+            <em>Your account details are held within our database, which your local police force has access to in order to view stolen bikes, as well as contact the owners of these bikes.</em><br>
+
+        </div>
+
+        <!-- Registration form -->
+        <form class="register-form" action="https://s4304413-ctxxxx.uogs.co.uk/php/register.php" method="post" enctype="multipart/form-data">
+            <h1>Register your bike </h1>
+			<!-- Input fields for registering a bike, POST to register.php for handling. -->
+            <input type="text" name="mpn" placeholder="Manufacturer part number (MPN)" required>
+            <input type="text" name="brand" placeholder="Brand" required>
+            <input type="text" name="model" placeholder="Model" required>
+            <input type="text" name="type" placeholder="Type" required>
+            <input type="text" name="wheel-size" placeholder="Wheel Size" required>
+            <input type="text" name="colour" placeholder="Colour" required>
+            <input type="number" name="gears" placeholder="Number of Gears" required>
+            <input type="text" name="brake-type" placeholder="Brake Type" required>
+            <input type="text" name="suspension" placeholder="Suspension" required>
+            <input type="text" name="gender" placeholder="Gender" required>
+            <input type="text" name="age-group" placeholder="Age group" required>
+            <input type="file" name="image" accept="image/*" required>
+            <button type="submit">Register bike</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="footer-center">&copy; 2024 Bike Theft Prevention. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!--Jquery scripts-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- Script to handle registering and signout -->
+    <script src="./js/register.js"></script>
+    <script src="signout.js"></script>
+
+</body>
+
+</html>

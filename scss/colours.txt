@@ -1,0 +1,4 @@
+rgba(19,19,19,255) - background grey
+rgba(38,38,38,255) - navbar grey
+rgba(54,54,54,255) - lighter grey
+rgb(207,207,207) - text light grey

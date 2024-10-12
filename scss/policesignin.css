@@ -1,0 +1,247 @@
+/* Reset default styling for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+    padding: 10px 0;
+    z-index: 10;
+    position: fixed;
+    width: 40%;
+    margin-left: 33%;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+/* Container for the navbar content */
+.navbar-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for menu items */
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for menu links */
+.menu-link {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for menu links */
+.menu-link:hover {
+    color: #805AD5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Focus effect for menu buttons */
+.menu-btn:focus {
+    color: #805AD5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Styling for menu buttons */
+.menu-btn {
+    padding: 8px 20px;
+    background-color: #805AD5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+/* Hover effect for menu buttons */
+.menu-btn:hover {
+    background-color: rgba(148, 118, 214, 1);
+    cursor: pointer;
+}
+
+/* Styling for the footer */
+.footer {
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Container for the footer content */
+.footer-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Center alignment for footer content */
+.footer-center {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+
+/* Styling for police menu buttons */
+.menu-btn-police:focus {
+    color: #805AD5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-btn-police {
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: #112255;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+.menu-btn-police:hover {
+    background-color: rgb(118, 140, 214);
+    cursor: pointer;
+}
+
+/* Styling for the mini-navbar */
+.mini-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    width: 235px;
+    height: 57px; 
+    display: flex;
+    align-items: center; 
+    border-radius: 25px;
+}
+
+/* Styling for mini-menu buttons */
+.mini-menu-btn {
+    padding: 8px 20px;
+    background-color: #112255;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+    margin-left: 10px;
+}
+
+/* Hover effect for mini-menu buttons */
+.mini-menu-btn:hover {
+    background-color: rgb(118, 140, 214);
+}
+
+/* Styling for police sign-in form */
+.signin-police {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    padding: 275px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/police-image.jpg);
+}
+
+/* Styling for the login form */
+.login-form {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Styling for form input fields */
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+/* Styling for form buttons */
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #805AD5;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for form buttons */
+.login-form button:hover {
+    background-color: rgba(148, 118, 214, 1);
+}
+
+/* Center alignment for headings */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for sign-up link */
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Styling for sign-up link */
+.signup-link a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for sign-up link */
+.signup-link a:hover {
+    color: #805AD5;
+}

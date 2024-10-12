@@ -1,0 +1,266 @@
+/* Reset default styling for all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+    padding: 10px 0;
+    z-index: 10;
+    position: fixed;
+    width: 40%;
+    margin-left: 33%;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+/* Container for the navbar content */
+
+.navbar-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for menu items */
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for menu links */
+
+.menu-link {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for menu links */
+
+.menu-link:hover {
+    color: #805AD5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Focus effect for menu buttons */
+
+.menu-btn:focus {
+    color: #805AD5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Styling for menu buttons */
+
+.menu-btn {
+    padding: 8px 20px;
+    background-color: #805AD5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+/* Hover effect for menu buttons */
+.menu-btn:hover {
+    background-color: rgba(148, 118, 214, 1);
+    cursor: pointer;
+}
+
+/* Styling for the footer */
+.footer {
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Container for the footer content */
+.footer-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Center alignment for footer content */
+.footer-center {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+
+/* Styling for the main container */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 300px;
+    background-color:#ffffff; 
+}
+
+/* Styling for the information container */
+.info-container {
+    width: calc(50% - 20px);
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6);
+    background-color: #fff;
+}
+
+/* Styling for the registration form */
+.register-form {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6);
+    background-color: #fff;
+}
+
+/* Center alignment for headings */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for input fields */
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for buttons */
+
+button {
+    padding: 8px 20px;
+    background-color: #805AD5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+/* Hover effect for buttons */
+
+button:hover {
+    background-color: rgba(148, 118, 214, 1);
+    cursor: pointer;
+}
+
+/* Styling for police menu buttons */
+
+.menu-btn-police:focus {
+    color: #805AD5;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-btn-police {
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: #112255;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+.menu-btn-police:hover {
+    background-color: rgb(118, 140, 214);
+    cursor: pointer;
+}
+
+/* Styling for images in the information container */
+
+.info-container img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+}
+
+/* Styling for lists in the information container */
+
+.info-container ul {
+    margin-left: 20px;
+}
+
+/* Styling for the mini navigation bar */
+
+.mini-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+    position: fixed;
+    top: 10px;
+    right: 15px; 
+    width: 235px;
+    height: 57px; 
+    display: flex;
+    align-items: center; 
+    border-radius: 25px;
+}
+
+/* Styling for mini menu buttons */
+
+.mini-menu-btn {
+    padding: 8px 20px;
+    background-color: #112255;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+    margin-left: 10px;
+}
+
+/* Hover effect for mini menu buttons */
+
+.mini-menu-btn:hover {
+    background-color: rgb(118, 140, 214);
+}

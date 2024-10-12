@@ -1,0 +1,328 @@
+/* Reset default margin, padding, font, and box-sizing for all elements */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Styling for the navigation bar */
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+    padding: 10px 0;
+    z-index: 10;
+    position: fixed;
+    width: 40%;
+    margin-left: 33%;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+/* Styling for the container of navigation links */
+
+.navbar-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Styling for the menu links */
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+/* Styling for individual menu links */
+
+.menu-link {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for menu links */
+
+.menu-link:hover {
+    color: #805AD5; 
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Styling for menu buttons */
+
+.menu-btn:focus {
+    color: #805AD5; 
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-btn {
+    padding: 8px 20px;
+    background-color: #805AD5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+/* Hover effect for menu buttons */
+
+.menu-btn:hover {
+    background-color: rgba(148, 118, 214, 1); 
+    cursor: pointer;
+}
+
+/* Styling for the footer */
+
+.footer {
+    background-color: #fff;
+    color: #333;
+    text-align: left;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Styling for the footer container */
+
+.footer-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Styling for the center-aligned text in the footer */
+
+.footer-center {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+}
+
+/* Styling for the police menu button on the navbar */
+
+.menu-btn-police:focus {
+    color: #805AD5; 
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.menu-btn-police {
+    padding: 8px 20px;
+    margin-left: 10px;
+    background-color: #112255;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+}
+
+/* Hover effect for the police menu button */
+
+.menu-btn-police:hover {
+    background-color: rgb(118, 140, 214); 
+    cursor: pointer;
+}
+
+/* Styling for the mini-navbar */
+
+.mini-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0, .5);
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    width: 235px;
+    height: 57px; 
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+}
+
+/* Styling for mini-menu buttons */
+
+.mini-menu-btn {
+    padding: 8px 20px;
+    background-color: #112255;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+    margin-left: 10px;
+}
+
+/* Hover effect for mini-menu buttons */
+
+.mini-menu-btn:hover {
+    background-color: rgb(118, 140, 214);
+}
+
+
+/* Styling for the container of bike information */
+
+.info-container {
+    display: flex;
+    flex-direction: column; /* Arrange tiles in a column */
+    align-items: center; 
+    padding: 80px 20px 20px; /* Increased top padding to move tiles down */
+}
+
+/* Styling for each bike tile */
+
+.bike-tile {
+    display: flex;
+	flex-direction: row;
+	gap: 1em;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%; /* Make the tiles smaller in width */
+    max-width: 1700px; /* Maximum width for the tile */
+    margin: 10px auto; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Styling for the image container within a bike tile */
+
+.bike-tile .image-container {
+	
+	width: 50%;
+	height: auto;
+	
+}
+
+/* Styling for images within the image container */
+
+.bike-tile .image-container img {
+	
+	width: 100%;
+	height: auto;
+}
+
+/* Styling for the data container within a bike tile */
+
+.bike-tile .data-container {
+	
+	width: 100%;
+	height: 100%;
+	
+	display: grid;
+	grid-template-columns: repeat(6, 16.5%);
+	grid-template-rows: repeat(2, 50%);
+	gap: 15px;
+	padding: 50px;
+	
+}
+
+/* Styling for individual data items within the data container */
+
+.bike-tile .data-container .data-item {
+
+	text-align: center;
+	width: auto;
+	height: 50%;
+	
+}
+
+/* Styling for bike details */
+
+.bike-details {
+    flex: 1; /* Allow bike details to grow and fill available space */
+}
+
+/* Styling for paragraphs within a bike tile */
+
+.bike-tile p {
+    margin-bottom: 5px; 
+    font-weight: bold; 
+}
+
+/* Styling for bike values */
+
+.bike-tile .bike-value {
+    color: #666;
+    margin-left: 20px; /* Add margin to separate bike details */
+}
+
+/* Styling for the report form */
+.report-form {
+    display: list-item;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+	margin: 0 auto;
+}
+
+/* Styling for headings within the report form */
+
+.report-form h1 {
+    text-align: center;
+	padding-top: 100px
+}
+
+.report-form h2 {
+	text-align: center;
+}
+
+/* Styling for text input fields within the report form */
+
+.report-form input[type="text"] {
+    display: block; /* Change display to block to stack elements */
+    width: 30%; 
+    margin: 0 auto; 
+    margin-bottom: 15px; 
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Styling for the form submit button */
+.form-submit-button {
+    width: 20%; 
+    margin: 5px auto;
+    padding: 10px;
+    background-color: #805AD5;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 25px;
+    border: .01px solid rgba(0, 0, 0, 0);
+    display: block;
+}
+
+/* Styling for the map container */
+.map-container {
+    width: 88%;
+    margin: 20px auto; 
+    height: 600px; /* Set a fixed height for the map */
+}
